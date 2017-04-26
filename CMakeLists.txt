@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.12)
-project(qpOASES_catkin CXX)
+project(qpoases_catkin CXX)
 set(qpOASES_VERSION "3.2.0")
 
 include(ExternalProject)
@@ -9,8 +9,9 @@ ExternalProject_Add(
   #SVN_REPOSITORY https://projects.coin-or.org/svn/qpOASES/stable/3.2
   #SVN_TRUST_CERT 1
   GIT_REPOSITORY https://github.com/humanoid-path-planner/qpoases.git
-  GIT_TAG master
+  GIT_TAG c7e5ff50a770cf3a2b1b56eb375941be6088b26b #master
   CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${CATKIN_DEVEL_PREFIX}
+  UPDATE_COMMAND ""
 )
 
 find_package(catkin REQUIRED)

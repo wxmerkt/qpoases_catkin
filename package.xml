@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package>
-  <name>qpOASES_catkin</name>
+  <name>qpoases_catkin</name>
   <version>3.2.0</version>
   <description>This package provides a wrapper around the Humanoid Path Planner pkg-config-modified version of the qpOASES package.</description>
   <maintainer email="w.merkt+oss@gmail.com">Wolfgang Merkt</maintainer>

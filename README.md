@@ -1,4 +1,4 @@
-qpOASES_catkin
+qpoases_catkin
 ==============
 
 Catkin wrapper for the [Humanoid Path Planner-modified version of qpOASES](https://github.com/humanoid-path-planner/qpoases).
@@ -7,13 +7,13 @@ It allows you to use catkin macros to find and include qpOASES in your catkin pa
 
 `package.xml`: 
 ```xml
-<build_depend>qpOASES_catkin</build_depend>
-<run_depend>qpOASES_catkin</run_depend>
+<build_depend>qpoases_catkin</build_depend>
+<run_depend>qpoases_catkin</run_depend>
 ```
 
 `CMakeLists.txt`:
 ```cmake
-find_package(catkin REQUIRED COMPONENTS qpOASES_catkin)
+find_package(catkin REQUIRED COMPONENTS qpoases_catkin)
 include_directories(${catkin_INCLUDE_DIRS})
 target_link_libraries(test ${catkin_LIBRARIES})
 
