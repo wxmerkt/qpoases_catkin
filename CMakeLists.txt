@@ -11,7 +11,6 @@ ExternalProject_Add(
   GIT_REPOSITORY https://github.com/humanoid-path-planner/qpoases.git
   GIT_TAG c7e5ff50a770cf3a2b1b56eb375941be6088b26b #master
   CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${CATKIN_DEVEL_PREFIX}
-  UPDATE_COMMAND ""
 )
 
 find_package(catkin REQUIRED)
